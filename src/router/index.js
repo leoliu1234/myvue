@@ -4,32 +4,31 @@ import Router from 'vue-router'
 Vue.use(Router)
 
 const Login = (resolve) => {
-  import('@/components/Login').then((module) => {
+  import('@/pages/Login').then((module) => {
     resolve(module)
   })
 }
 
 const Dashboard = (resolve) => {
-  import('@/components/Dashboard').then((module) => {
+  import('@/pages/Dashboard').then((module) => {
     resolve(module)
   })
 }
 
 const ProductList = (resolve) => {
-  import('@/components/ProductList').then((module) => {
+  import('@/pages/ProductList').then((module) => {
     resolve(module)
   })
 }
 
 const ShoppingCart = (resolve) => {
-  import('@/components/ShoppingCart').then((module) => {
+  import('@/pages/ShoppingCart').then((module) => {
     resolve(module)
   })
 }
 
-
 const Hello = (resolve) => {
-  import('@/components/HelloWorld').then((module) => {
+  import('@/pages/HelloWorld').then((module) => {
     resolve(module)
   })
 }

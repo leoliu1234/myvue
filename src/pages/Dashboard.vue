@@ -1,8 +1,6 @@
 <template>
-  <div>
-      <span>Name:{{name}}</span>
-      <br/>
-      <span>Password:{{password}}</span>
+  <div class="dashboard">
+     <UserInfo></UserInfo>
       <br>
       <button @click="back">Back</button>
       <button @click="$router.push('/hello')">Hello</button>
@@ -12,7 +10,9 @@
 </template>
 
 <script>
-import { mapState } from "vuex";
+import { mapState } from "vuex"
+import UserInfo from '@/components/UserInfo'
+
 export default {
   computed: {
     ...mapState({
@@ -24,7 +24,16 @@ export default {
       back(){
           this.$router.back();
       }
-  }
+  },
+  components:{UserInfo}
 };
 </script>
+
+<style scoped>
+  .dashboard{
+    width:80%;
+    margin: auto;
+  }
+</style>
+
 
