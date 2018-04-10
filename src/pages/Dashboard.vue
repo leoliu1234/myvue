@@ -10,8 +10,8 @@
 </template>
 
 <script>
-import { mapState } from "vuex"
-import UserInfo from '@/components/UserInfo'
+import { mapState } from "vuex";
+import UserInfo from "@/components/UserInfo";
 
 export default {
   computed: {
@@ -20,20 +20,20 @@ export default {
       password: state => state.login.password
     })
   },
-  methods:{
-      back(){
-          this.$router.back();
-      }
+  methods: {
+    back() {
+      this.$router.back();
+    }
   },
-  components:{UserInfo}
+  components: { UserInfo }
 };
 </script>
 
-<style scoped>
-  .dashboard{
-    width:80%;
-    margin: auto;
-  }
+<style lang="stylus" scoped>
+.dashboard {
+  width: 80%;
+  margin: auto;
+}
 </style>
 
 
