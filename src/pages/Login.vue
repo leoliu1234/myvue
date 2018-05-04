@@ -1,5 +1,6 @@
 <template>
   <div class="v-form">
+    <div class="v-form-title">登录</div>
     <div class="v-form-item">
       <cube-input placeholder="用户名" v-model="name" ></cube-input>
     </div>
