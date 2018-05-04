@@ -41,5 +41,10 @@ export default {
 };
 </script>
 
+<style lang="stylus" scoped>
+@require ('../assets/stylus/form.styl');
+</style>
+
+
 
 
